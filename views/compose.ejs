@@ -1,0 +1,21 @@
+
+<%- include("partials/header"); -%>
+<div class="headcontainer" style="margin-top:20px;">
+<div class="col-lg-6 col-md-4 col-sm-12">
+    <form class="" action="/compose" method="post">
+      <div class="form-group">
+        <label class="startheading">TITLE</label>
+        <input class="form-control" type="text" name="postTitle" required>
+        <label class="startheading">POST</label>
+        <textarea class="form-control" name="postBody" rows="5" cols="30" required></textarea>
+      </div>
+      <div class="wrap">
+        <button class="button">PUBLISH</button>
+    </div>
+  </form>
+</div>
+<div class="col-lg-6 col-md-4 col-sm-12">
+<img class="composeimg"src="https://www.influencermarketingsingapore.com/wp-content/uploads/2018/07/slider-1.gif" /></div>
+</div>
+
+<%- include("partials/footer"); -%>

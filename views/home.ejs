@@ -1,0 +1,18 @@
+
+<%- include("partials/header"); -%>
+    <h1 class="startheading">HEY BLOGGERS !</h1>
+    <p class="start typewriter"> <%= startingContent %> </p>
+    <p class="start typewriter"> <%= startingContent1 %> </p>
+    <p class="start typewriter"> <%= startingContent2 %> </p>
+<%  posts.forEach(function(post){ %>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="startheading"><%=post.title%></h1>
+        <p class="start">
+        <%=post.content.substring(0, 100) + " ..."%>
+        <a href="/posts/<%=post._id%>" style="color:#1abc9c;">Read More</a>
+        </p>
+      </div>
+    </div>
+<% }) %>
+<%- include("partials/footer"); -%>
